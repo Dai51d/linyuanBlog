@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端常见面试题--》vue篇 | 临渊的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/linyuanBlog/wman.jpg">
+    <script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e072087a21b1865aa670ebe1fe0b6bcb";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+    <meta name="description" content="Welcome to my blog">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/linyuanBlog/assets/css/0.styles.15969731.css" as="style"><link rel="preload" href="/linyuanBlog/assets/js/app.dd0fd2a4.js" as="script"><link rel="preload" href="/linyuanBlog/assets/js/3.266484f4.js" as="script"><link rel="preload" href="/linyuanBlog/assets/js/1.63e99956.js" as="script"><link rel="preload" href="/linyuanBlog/assets/js/15.49b15fc5.js" as="script"><link rel="prefetch" href="/linyuanBlog/assets/js/10.dae1a1f8.js"><link rel="prefetch" href="/linyuanBlog/assets/js/11.c4aad205.js"><link rel="prefetch" href="/linyuanBlog/assets/js/12.3442149d.js"><link rel="prefetch" href="/linyuanBlog/assets/js/13.2c1baccd.js"><link rel="prefetch" href="/linyuanBlog/assets/js/14.cacb6fe3.js"><link rel="prefetch" href="/linyuanBlog/assets/js/4.c3651bcf.js"><link rel="prefetch" href="/linyuanBlog/assets/js/5.5fbf9441.js"><link rel="prefetch" href="/linyuanBlog/assets/js/6.3899b0d6.js"><link rel="prefetch" href="/linyuanBlog/assets/js/7.1e1e5a7b.js"><link rel="prefetch" href="/linyuanBlog/assets/js/8.63478094.js"><link rel="prefetch" href="/linyuanBlog/assets/js/9.198efce6.js">
+    <link rel="stylesheet" href="/linyuanBlog/assets/css/0.styles.15969731.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>临渊的博客</h3> <p class="description" data-v-59e6cb88>Welcome to my blog</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>临渊</span>
+          
+        <span data-v-59e6cb88>2023 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/linyuanBlog/" class="home-link router-link-active"><img src="/linyuanBlog/wman.jpg" alt="临渊的博客" class="logo"> <span class="site-name">临渊的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/linyuanBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/前端知识/" class="nav-link"><i class="undefined"></i>
+  前端知识
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/前端随笔/" class="nav-link"><i class="undefined"></i>
+  前端随笔
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li></ul></div></div><div class="nav-item"><a href="/linyuanBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/linyuanBlog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/admire_fish?type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/1716109772" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bilibili"></i>
+  Bilibili
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/linyuanBlog/man.jpg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    临渊
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>5</h3> <h6 data-v-1fad0c41>文章</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>5</h3> <h6 data-v-1fad0c41>标签</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/linyuanBlog/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/前端知识/" class="nav-link"><i class="undefined"></i>
+  前端知识
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/前端随笔/" class="nav-link"><i class="undefined"></i>
+  前端随笔
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/其他/" class="nav-link"><i class="undefined"></i>
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/linyuanBlog/categories/vue/" class="nav-link"><i class="undefined"></i>
+  vue
+</a></li></ul></div></div><div class="nav-item"><a href="/linyuanBlog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/linyuanBlog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间线
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-other"></i>
+      关于
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/admire_fish?type=blog" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/1716109772" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bilibili"></i>
+  Bilibili
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>前端常见面试题--》vue篇</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>临渊</span>
+          
+        <span data-v-59e6cb88>2023 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">前端常见面试题--》vue篇</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>临渊</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>2023/7/3</span></i> <i class="iconfont reco-eye" data-v-8a445198><span id="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-8a445198><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>前端</span><span class="tag-item" data-v-8a445198>面试题目</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="vue生命周期"><a href="#vue生命周期" class="header-anchor">#</a> Vue生命周期</h2> <h3 id="vue-生命周期都有哪些"><a href="#vue-生命周期都有哪些" class="header-anchor">#</a> Vue 生命周期都有哪些？</h3> <div class="language- extra-class"><pre><code>解答：系统自带了八个生命周期，分别是：
+
+beforeCreate
+created
+beforeMount
+mounted
+beforeUpdate
+updated
+beforeDestroy
+destroyed
+</code></pre></div><h3 id="一旦进入组件或者一旦进入页面-会执行哪些生命周期"><a href="#一旦进入组件或者一旦进入页面-会执行哪些生命周期" class="header-anchor">#</a> 一旦进入组件或者一旦进入页面，会执行哪些生命周期？</h3> <div class="language- extra-class"><pre><code>解答：会之前前面4个
+
+beforeCreate
+created
+beforeMount
+mounted
+</code></pre></div><h3 id="如果使用了keep-alive会多出来俩个生命周期"><a href="#如果使用了keep-alive会多出来俩个生命周期" class="header-anchor">#</a> 如果使用了keep-alive会多出来俩个生命周期</h3> <div class="language- extra-class"><pre><code>activated
+deactivated
+</code></pre></div><h3 id="如果使用了keep-alive第一次进入组件会执行5个生命周期"><a href="#如果使用了keep-alive第一次进入组件会执行5个生命周期" class="header-anchor">#</a> 如果使用了keep-alive第一次进入组件会执行5个生命周期</h3> <div class="language- extra-class"><pre><code>beforeCreate
+created
+beforeMount
+mounted
+activated
+</code></pre></div><h3 id="如果使用了keep-alive第二次或者第n次-每次都会执行一个生命周期"><a href="#如果使用了keep-alive第二次或者第n次-每次都会执行一个生命周期" class="header-anchor">#</a> 如果使用了keep-alive第二次或者第N次，每次都会执行一个生命周期</h3> <div class="language- extra-class"><pre><code>activated
+</code></pre></div><h2 id="v-show和v-if是干什么-有什么区别"><a href="#v-show和v-if是干什么-有什么区别" class="header-anchor">#</a> v-show和v-if是干什么？有什么区别？</h2> <h3 id="v-show"><a href="#v-show" class="header-anchor">#</a> v-show</h3> <div class="language- extra-class"><pre><code>显示和隐藏 : display:none进行隐藏 、display:block进行显示		
+</code></pre></div><h3 id="v-if"><a href="#v-if" class="header-anchor">#</a> v-if</h3> <div class="language- extra-class"><pre><code>创建和删除：remove、append		
+</code></pre></div><h3 id="区别"><a href="#区别" class="header-anchor">#</a> 区别：</h3> <div class="language- extra-class"><pre><code>显示和隐藏用：v-show
+创建和删除用：v-if
+
+频繁切换用：v-show
+不频繁切换用：v-if	
+
+首次加载：用v-if，不用v-show
+为什么：
+	如果用v-if可以没有这个盒子，然后再通过v-if进行创建（但是第一次进入页面是没有这个盒子，是不加载的）。
+	如果用v-show这个盒子不管是显示还是隐藏，该盒子都是在的（节点都是存在）
+</code></pre></div><h3 id="使用场景"><a href="#使用场景" class="header-anchor">#</a> 使用场景：</h3> <div class="language- extra-class"><pre><code>v-show ： 加入购物车、分享、蒙层这种都基本上用v-show
+v-if : 首页栏目切换的时候v-if
+</code></pre></div><h2 id="v-if和v-for-优先级"><a href="#v-if和v-for-优先级" class="header-anchor">#</a> v-if和v-for 优先级</h2> <h3 id="v-for的优先级要比v-if的优先级高"><a href="#v-for的优先级要比v-if的优先级高" class="header-anchor">#</a> v-for的优先级要比v-if的优先级高</h3> <p>证明这个事情，是在vue.js源码种10997行</p> <div class="language- extra-class"><pre><code>if (el.staticRoot &amp;&amp; !el.staticProcessed) {
+  return genStatic(el, state)
+} else if (el.once &amp;&amp; !el.onceProcessed) {
+  return genOnce(el, state)
+} else if (el.for &amp;&amp; !el.forProcessed) {
+  return genFor(el, state)
+} else if (el.if &amp;&amp; !el.ifProcessed) {
+  return genIf(el, state)
+} else if (el.tag === 'template' &amp;&amp; !el.slotTarget &amp;&amp; !state.pre) {
+  return genChildren(el, state) || 'void 0'
+} else if (el.tag === 'slot') {
+  return genSlot(el, state)
+} else {}
+</code></pre></div><h3 id="注-v-if和v-for不要写在同一个节点上-这个性能很差。-v-if要写在父节点上"><a href="#注-v-if和v-for不要写在同一个节点上-这个性能很差。-v-if要写在父节点上" class="header-anchor">#</a> 注：v-if和v-for不要写在同一个节点上，这个性能很差。（v-if要写在父节点上）</h3> <h2 id="ref"><a href="#ref" class="header-anchor">#</a> ref</h2> <h3 id="是什么"><a href="#是什么" class="header-anchor">#</a> 是什么？</h3> <div class="language- extra-class"><pre><code>获取dom
+</code></pre></div><h3 id="场景"><a href="#场景" class="header-anchor">#</a> 场景？</h3> <div class="language- extra-class"><pre><code>如果项目中使用插件，并且插件是要获取dom的，那么就可以使用ref了。
+</code></pre></div><h2 id="keep-alive"><a href="#keep-alive" class="header-anchor">#</a> keep-alive</h2> <h3 id="是什么-2"><a href="#是什么-2" class="header-anchor">#</a> 是什么？</h3> <div class="language- extra-class"><pre><code>缓存组件
+</code></pre></div><h3 id="一旦使用keep-alive会多两个生命周期"><a href="#一旦使用keep-alive会多两个生命周期" class="header-anchor">#</a> 一旦使用keep-alive会多两个生命周期</h3> <div class="language- extra-class"><pre><code>activated
+deactivated
+</code></pre></div><h3 id="功能"><a href="#功能" class="header-anchor">#</a> 功能</h3> <div class="language- extra-class"><pre><code>提升性能的
+</code></pre></div><h2 id="nexttick"><a href="#nexttick" class="header-anchor">#</a> nextTick</h2> <h3 id="是什么-3"><a href="#是什么-3" class="header-anchor">#</a> 是什么？</h3> <div class="language- extra-class"><pre><code>当dom更新完毕执行内部代码
+</code></pre></div><h3 id="场景-2"><a href="#场景-2" class="header-anchor">#</a> 场景</h3> <div class="language- extra-class"><pre><code>使用插件的时候会用到。例如new Swiper这个插件可能会获取当前元素的宽度或者高度，等dom都加载完毕再去获取宽度和高度就不会有任何问题了。
+</code></pre></div><h2 id="computed、methods、watch区别"><a href="#computed、methods、watch区别" class="header-anchor">#</a> computed、methods、watch区别</h2> <h3 id="computed-计算属性"><a href="#computed-计算属性" class="header-anchor">#</a> computed：计算属性</h3> <h6 id="可以监听某些数据的变化-并且有缓存。"><a href="#可以监听某些数据的变化-并且有缓存。" class="header-anchor">#</a> 可以监听某些数据的变化，并且有缓存。</h6> <h6 id="如果一进入页面调用-就会触发"><a href="#如果一进入页面调用-就会触发" class="header-anchor">#</a> 如果一进入页面调用，就会触发</h6> <h3 id="methods-可以放入函数"><a href="#methods-可以放入函数" class="header-anchor">#</a> methods  ： 可以放入函数</h3> <h6 id="没有缓存"><a href="#没有缓存" class="header-anchor">#</a> 没有缓存</h6> <h6 id="如果一进入页面调用-就会触发-2"><a href="#如果一进入页面调用-就会触发-2" class="header-anchor">#</a> 如果一进入页面调用，就会触发</h6> <h3 id="watch-监听-路由和数据"><a href="#watch-监听-路由和数据" class="header-anchor">#</a> watch ：监听（路由和数据）</h3> <h6 id="当数据发生改变时-才会触发"><a href="#当数据发生改变时-才会触发" class="header-anchor">#</a> 当数据发生改变时，才会触发</h6> <h6 id="可以得到现在的值和过去的值"><a href="#可以得到现在的值和过去的值" class="header-anchor">#</a> 可以得到现在的值和过去的值</h6> <p>​</p> <h2 id="vue组件的通信-组件的传值"><a href="#vue组件的通信-组件的传值" class="header-anchor">#</a> Vue组件的通信（组件的传值）</h2> <h3 id="_8-1-父传子"><a href="#_8-1-父传子" class="header-anchor">#</a> 8.1 父传子</h3> <div class="language- extra-class"><pre><code>父：
+&lt;HelloWorld :msg=&quot;str&quot; /&gt;
+&lt;HelloWorld :msg=&quot;str&quot; &gt;&lt;/HelloWorld&gt;
+
+子：
+props:['msg']
+props: {
+	msg: String,
+},
+</code></pre></div><h3 id="_8-2-子传父"><a href="#_8-2-子传父" class="header-anchor">#</a> 8.2 子传父</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>子：
+&lt;button @click=&quot;changeParentName&quot;&gt;改变父组件的name&lt;/button&gt;
+export default {
+    methods: {
+        //子组件的事件
+        changeParentName: function() {
+            this.$emit('handleChange', 'Jack') // 触发父组件中handleChange事件并传参Jack
+            // 注：此处事件名称与父组件中绑定的事件名称要一致
+        }
+    }
+}
+
+父：
+&lt;child @handleChange=&quot;changeName&quot;&gt;&lt;/child&gt;
+methods: {
+    changeName(name) {  // name形参是子组件中传入的值Jack
+        this.name = name
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="_8-3-兄弟组件传值"><a href="#_8-3-兄弟组件传值" class="header-anchor">#</a> 8.3 兄弟组件传值</h3> <p>创建bus作为中转</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from &quot;vue&quot;;
+export default new Vue;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>A组件：
+&lt;button @click='btn'&gt;HelloWorld按钮&lt;/button&gt;
+data () {
+    return {
+      hlStr:&quot;这是helloWorld组件的数据&quot;
+    }
+},
+methods:{
+    btn(){
+      bus.$emit('selectItem',this.hlStr);
+    }
+}
+
+B组件：
+created(){
+		bus.$on('selectItem',(val)=&gt;{
+			console.log( val , 1111);
+		})
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h1 id="九、slot插槽"><a href="#九、slot插槽" class="header-anchor">#</a> 九、slot插槽</h1> <p>使用场景：组件中有些地方的布局可能大多一致，但是细微有些小小变化</p> <h1 id="十、vue路由的高频面试题"><a href="#十、vue路由的高频面试题" class="header-anchor">#</a> 十、Vue路由的高频面试题</h1> <h3 id="_10-1-spa单页面应用和传统页面跳转有什么区别"><a href="#_10-1-spa单页面应用和传统页面跳转有什么区别" class="header-anchor">#</a> 10.1 SPA单页面应用和传统页面跳转有什么区别？</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>SPA跳转是一个页面进行切换
+
+传统页面跳转就是跳转不同的html了
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>SPA对于seo部分不是特别好，只能收录一个
+
+传统的页面对于seo比较好，多个html文件收录
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_10-2-路径传值"><a href="#_10-2-路径传值" class="header-anchor">#</a> 10.2 路径传值</h3> <p>显示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>传：
+this.$router.push({
+        path:'/about',
+        query:{
+          key:'你好'
+        }
+})
+接：
+this.$route.query
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>隐示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>传：
+this.$router.push({
+        name:'About',
+        params:{
+          key:'你好'
+        }
+})
+接：
+this.$route.params
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_10-3-路由的模式"><a href="#_10-3-路由的模式" class="header-anchor">#</a> 10.3 路由的模式</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>mode: &quot;history&quot;   http://localhost:8080/about
+
+mode:&quot;hash&quot;       http://localhost:8080/#/about
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_10-4-路由导航守卫-拦截、路由钩子函数"><a href="#_10-4-路由导航守卫-拦截、路由钩子函数" class="header-anchor">#</a> 10.4 路由导航守卫（拦截、路由钩子函数）</h3> <p>全局</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>beforeEach
+beforeResolve
+afterEach
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>路由独享</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>beforeEnter
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>组件内</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>beforeRouteEnter
+beforeRouteUpdate (2.2 新增)
+beforeRouteLeave
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h5 id="场景-要去拦截-判断用户是否是登录状态。功能-进入地址管理-用户如果没有登录是进入不了地址管理-在进入之前判断拦截-需要先登录。"><a href="#场景-要去拦截-判断用户是否是登录状态。功能-进入地址管理-用户如果没有登录是进入不了地址管理-在进入之前判断拦截-需要先登录。" class="header-anchor">#</a> 场景：要去拦截，判断用户是否是登录状态。功能：进入地址管理，用户如果没有登录是进入不了地址管理（在进入之前判断拦截），需要先登录。</h5> <h3 id="_10-5-子路由、动态路由"><a href="#_10-5-子路由、动态路由" class="header-anchor">#</a> 10.5 子路由、动态路由</h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code>子路由：children
+<span class="token literal-property property">动态路由：path</span><span class="token operator">:</span> <span class="token string">'/user/:id'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h1 id="_11、vuex"><a href="#_11、vuex" class="header-anchor">#</a> 11、Vuex</h1> <h3 id="_11-1-vuex有哪些部分构成"><a href="#_11-1-vuex有哪些部分构成" class="header-anchor">#</a> 11.1 Vuex有哪些部分构成</h3> <p>state、getters、mutations、actions、modules</p> <h3 id="_11-2-什么场景用vuex"><a href="#_11-2-什么场景用vuex" class="header-anchor">#</a> 11.2 什么场景用Vuex</h3> <p>共享、方便管理、方便维护、组件传值......</p> <p>项目：购物车数据，订单数据，用户的登录信息....</p> <h3 id="_11-3-mutations和actions的区别"><a href="#_11-3-mutations和actions的区别" class="header-anchor">#</a> 11.3 mutations和actions的区别</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>本质区别：
+mutations	必须是同步函数
+actions		“可以包含”任意异步操作
+
+使用区别：mutations中可以放入函数，actions也可以放入函数，但是一般我们在mutations中放入函数而actions是提交mutations
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h1 id="_12、双向绑定原理"><a href="#_12、双向绑定原理" class="header-anchor">#</a> 12、双向绑定原理</h1> <p>通过Object.defineProperty劫持数据发生的改变，如果数据发生改变了（在set中进行赋值的），触发update方法进行更新节点内容（），从而实现了数据双向绑定的原理。</p> <h1 id="_13、diff算法"><a href="#_13、diff算法" class="header-anchor">#</a> 13、diff算法</h1> <p>功能：提升性能</p> <p>虚拟dom ===》其实就是数据（ 把dom数据化 ）</p> <h3 id="主流-snabbdom、virtual-dom"><a href="#主流-snabbdom、virtual-dom" class="header-anchor">#</a> 主流：snabbdom、virtual-dom</h3> <p>snabbdom：https://www.npmjs.com/package/snabbdom</p> <h3 id="_13-1-搭建环境"><a href="#_13-1-搭建环境" class="header-anchor">#</a> 13.1 搭建环境</h3> <p>npm init -y</p> <p>cnpm install webpack@5 webpack-cli@3 webpack-dev-server@3 -S</p> <p>cnpm install snabbdom -S</p> <p>新建webpack.config.js</p> <p>配置webpack.config.js</p> <h3 id="_13-2-虚拟节点-和-真实节点"><a href="#_13-2-虚拟节点-和-真实节点" class="header-anchor">#</a> 13.2 虚拟节点 和  真实节点</h3> <p>虚拟节点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  children: undefined
+  data: {}
+  elm: h1
+  key: undefined
+  sel: &quot;h1&quot;
+  text: &quot;你好h1&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>真实节点：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;h2&gt;你好&lt;/h2&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_13-3-新老节点替换的规则"><a href="#_13-3-新老节点替换的规则" class="header-anchor">#</a> 13.3 新老节点替换的规则</h3> <div class="language- extra-class"><pre><code>1、如果新老节点不是同一个节点名称，那么就暴力删除旧的节点，创建插入新的节点。
+
+2、只能同级比较，不能跨层比较。如果跨层那么就暴力删除旧的节点，创建插入新的节点。
+
+3、如果是相同节点，又分为很多情况
+</code></pre></div><div class="language- line-numbers-mode"><pre class="language-text"><code>3.1 新节点有没有children
+		如果新的节点没有children，那就证明新节点是文本，那直接把旧的替换成新的文本
+3.2 新节点有children
+		新的有children，旧的也有children ===》就是diff算法的核心了【3.3】
+		新的有children，旧的没有 ===》创建元素添加（把旧的内容删除清空掉，增加新的）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>3.3 diff算法的核心（最复杂的情况）
+
+1、 旧前 和 新前
+		匹配：旧前的指针++ 、 新前的指针++
+2、 旧后 和 新后
+		匹配：旧后的指针-- 、 新后的指针--
+3、 旧前 和 新后
+		匹配：旧前的指针++ 、 新后的指针--
+4、 旧后 和 新前
+		匹配：旧后的指针-- 、 新前的指针++
+5、 以上都不满足条件 ===》查找
+		新的指针++，新的添加到页面上并且新在旧的种有，要给旧的复制成undefined
+6、 创建或者删除
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>***注意：如果要提升性能，一定要加入key，key是唯一标示，在更改前后，确认是不是同一个节点。</p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">2024/6/23 18:20:39</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#vue生命周期" class="sidebar-link reco-side-vue生命周期" data-v-b57cc07c>Vue生命周期</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#vue-生命周期都有哪些" class="sidebar-link reco-side-vue-生命周期都有哪些" data-v-b57cc07c>Vue 生命周期都有哪些？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#一旦进入组件或者一旦进入页面-会执行哪些生命周期" class="sidebar-link reco-side-一旦进入组件或者一旦进入页面-会执行哪些生命周期" data-v-b57cc07c>一旦进入组件或者一旦进入页面，会执行哪些生命周期？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#如果使用了keep-alive会多出来俩个生命周期" class="sidebar-link reco-side-如果使用了keep-alive会多出来俩个生命周期" data-v-b57cc07c>如果使用了keep-alive会多出来俩个生命周期</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#如果使用了keep-alive第一次进入组件会执行5个生命周期" class="sidebar-link reco-side-如果使用了keep-alive第一次进入组件会执行5个生命周期" data-v-b57cc07c>如果使用了keep-alive第一次进入组件会执行5个生命周期</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#如果使用了keep-alive第二次或者第n次-每次都会执行一个生命周期" class="sidebar-link reco-side-如果使用了keep-alive第二次或者第n次-每次都会执行一个生命周期" data-v-b57cc07c>如果使用了keep-alive第二次或者第N次，每次都会执行一个生命周期</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#v-show和v-if是干什么-有什么区别" class="sidebar-link reco-side-v-show和v-if是干什么-有什么区别" data-v-b57cc07c>v-show和v-if是干什么？有什么区别？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#v-show" class="sidebar-link reco-side-v-show" data-v-b57cc07c>v-show</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#v-if" class="sidebar-link reco-side-v-if" data-v-b57cc07c>v-if</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#区别" class="sidebar-link reco-side-区别" data-v-b57cc07c>区别：</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#使用场景" class="sidebar-link reco-side-使用场景" data-v-b57cc07c>使用场景：</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#v-if和v-for-优先级" class="sidebar-link reco-side-v-if和v-for-优先级" data-v-b57cc07c>v-if和v-for 优先级</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#v-for的优先级要比v-if的优先级高" class="sidebar-link reco-side-v-for的优先级要比v-if的优先级高" data-v-b57cc07c>v-for的优先级要比v-if的优先级高</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#注-v-if和v-for不要写在同一个节点上-这个性能很差。-v-if要写在父节点上" class="sidebar-link reco-side-注-v-if和v-for不要写在同一个节点上-这个性能很差。-v-if要写在父节点上" data-v-b57cc07c>注：v-if和v-for不要写在同一个节点上，这个性能很差。（v-if要写在父节点上）</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#ref" class="sidebar-link reco-side-ref" data-v-b57cc07c>ref</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#是什么" class="sidebar-link reco-side-是什么" data-v-b57cc07c>是什么？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#场景" class="sidebar-link reco-side-场景" data-v-b57cc07c>场景？</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#keep-alive" class="sidebar-link reco-side-keep-alive" data-v-b57cc07c>keep-alive</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#是什么-2" class="sidebar-link reco-side-是什么-2" data-v-b57cc07c>是什么？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#一旦使用keep-alive会多两个生命周期" class="sidebar-link reco-side-一旦使用keep-alive会多两个生命周期" data-v-b57cc07c>一旦使用keep-alive会多两个生命周期</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#功能" class="sidebar-link reco-side-功能" data-v-b57cc07c>功能</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#nexttick" class="sidebar-link reco-side-nexttick" data-v-b57cc07c>nextTick</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#是什么-3" class="sidebar-link reco-side-是什么-3" data-v-b57cc07c>是什么？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#场景-2" class="sidebar-link reco-side-场景-2" data-v-b57cc07c>场景</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#computed、methods、watch区别" class="sidebar-link reco-side-computed、methods、watch区别" data-v-b57cc07c>computed、methods、watch区别</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#computed-计算属性" class="sidebar-link reco-side-computed-计算属性" data-v-b57cc07c>computed：计算属性</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#methods-可以放入函数" class="sidebar-link reco-side-methods-可以放入函数" data-v-b57cc07c>methods  ： 可以放入函数</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#watch-监听-路由和数据" class="sidebar-link reco-side-watch-监听-路由和数据" data-v-b57cc07c>watch ：监听（路由和数据）</a></li><li class="level-2" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#vue组件的通信-组件的传值" class="sidebar-link reco-side-vue组件的通信-组件的传值" data-v-b57cc07c>Vue组件的通信（组件的传值）</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_8-1-父传子" class="sidebar-link reco-side-_8-1-父传子" data-v-b57cc07c>8.1 父传子</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_8-2-子传父" class="sidebar-link reco-side-_8-2-子传父" data-v-b57cc07c>8.2 子传父</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_8-3-兄弟组件传值" class="sidebar-link reco-side-_8-3-兄弟组件传值" data-v-b57cc07c>8.3 兄弟组件传值</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_10-1-spa单页面应用和传统页面跳转有什么区别" class="sidebar-link reco-side-_10-1-spa单页面应用和传统页面跳转有什么区别" data-v-b57cc07c>10.1 SPA单页面应用和传统页面跳转有什么区别？</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_10-2-路径传值" class="sidebar-link reco-side-_10-2-路径传值" data-v-b57cc07c>10.2 路径传值</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_10-3-路由的模式" class="sidebar-link reco-side-_10-3-路由的模式" data-v-b57cc07c>10.3 路由的模式</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_10-4-路由导航守卫-拦截、路由钩子函数" class="sidebar-link reco-side-_10-4-路由导航守卫-拦截、路由钩子函数" data-v-b57cc07c>10.4 路由导航守卫（拦截、路由钩子函数）</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_10-5-子路由、动态路由" class="sidebar-link reco-side-_10-5-子路由、动态路由" data-v-b57cc07c>10.5 子路由、动态路由</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_11-1-vuex有哪些部分构成" class="sidebar-link reco-side-_11-1-vuex有哪些部分构成" data-v-b57cc07c>11.1 Vuex有哪些部分构成</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_11-2-什么场景用vuex" class="sidebar-link reco-side-_11-2-什么场景用vuex" data-v-b57cc07c>11.2 什么场景用Vuex</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_11-3-mutations和actions的区别" class="sidebar-link reco-side-_11-3-mutations和actions的区别" data-v-b57cc07c>11.3 mutations和actions的区别</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#主流-snabbdom、virtual-dom" class="sidebar-link reco-side-主流-snabbdom、virtual-dom" data-v-b57cc07c>主流：snabbdom、virtual-dom</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_13-1-搭建环境" class="sidebar-link reco-side-_13-1-搭建环境" data-v-b57cc07c>13.1 搭建环境</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_13-2-虚拟节点-和-真实节点" class="sidebar-link reco-side-_13-2-虚拟节点-和-真实节点" data-v-b57cc07c>13.2 虚拟节点 和  真实节点</a></li><li class="level-3" data-v-b57cc07c><a href="/linyuanBlog/vue/vue%E9%9D%A2%E8%AF%95%E9%A2%98.html#_13-3-新老节点替换的规则" class="sidebar-link reco-side-_13-3-新老节点替换的规则" data-v-b57cc07c>13.3 新老节点替换的规则</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:230px;display:none;" data-v-5775ee02>
+      欢迎来到我的博客
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:20px;opacity:1;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><div></div><canvas id="vuepress-canvas-cursor"></canvas><!----><div class="RibbonAnimation"></div><div class="reco-bgm-panel" data-v-b1d3339e><audio id="bgm" src="/你的星河.mp3" data-v-b1d3339e></audio> <div class="reco-float-box" style="bottom:30px;z-index:999999;display:none;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><img src="你的星河.jpg" data-v-b1d3339e></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="reco-bgm-cover" style="background-image:url(你的星河.jpg);" data-v-b1d3339e><div class="mini-operation" style="display:none;" data-v-b1d3339e><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-b1d3339e></i></div> <div class="falut-message" style="display:none;" data-v-b1d3339e>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-music music" data-v-b1d3339e></i>你的星河</div> <div class="info-box" data-v-b1d3339e><i class="reco-bgm reco-bgm-artist" data-v-b1d3339e></i>琥珀琴师Louis</div> <div class="reco-bgm-progress" data-v-b1d3339e><div class="progress-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div> <div class="reco-bgm-operation" data-v-b1d3339e><i class="reco-bgm reco-bgm-last last" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-play play" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-next next" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-b1d3339e></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-b1d3339e></i> <div class="volume-bar" data-v-b1d3339e><div class="bar" data-v-b1d3339e></div></div></div></div> <div class="reco-bgm-left-box" data-v-b1d3339e data-v-41bcba48 data-v-b1d3339e><i class="reco-bgm reco-bgm-left" data-v-b1d3339e></i></div></div></div></div></div>
+    <script src="/linyuanBlog/assets/js/app.dd0fd2a4.js" defer></script><script src="/linyuanBlog/assets/js/3.266484f4.js" defer></script><script src="/linyuanBlog/assets/js/1.63e99956.js" defer></script><script src="/linyuanBlog/assets/js/15.49b15fc5.js" defer></script>
+  </body>
+</html>
