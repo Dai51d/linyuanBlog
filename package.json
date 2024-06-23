@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "author": "dai",
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev blogs --host \"localhost\" --temp .temp",
+    "build": "vuepress build blogs"
+  },
+  "devDependencies": {
+    "vuepress": "1.9.7",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-theme-reco": "1.6.17"
+  },
+  "description": "Welcome to my blog",
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "axios": "^0.21.4",
+    "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-ribbon-animation": "^1.1.3"
+  }
+}
