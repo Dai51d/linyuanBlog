@@ -3,7 +3,7 @@
 
 ## 目录结构
 ```
-azusaWebBlog
+linyuanBlog
 - blogs
   + .vuepress
     + public
